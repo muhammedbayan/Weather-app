@@ -9,10 +9,14 @@
 <body>
     <div class="card">
         <nav>
-            <input id="input-el"  type="text" placeholder="Enter city name" >
+            <input id="input-el"  type="text" placeholder="Enter city name" oninput="toggleClearBtn()">
             <span>×</span>
             <button id="search-btn"><img src="images/search.png" alt=""></button>
+            
         </nav>
+        <div class="error">
+            <p>Invalid city name !</p>
+        </div>
         <main>
             <img id="climate" src="images/clouds.png" alt="">
             <h1 class="temp">22°c</h1>
